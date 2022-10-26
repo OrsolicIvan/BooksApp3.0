@@ -1,0 +1,44 @@
+
+<div class="container col-md-12" style="margin-top: 70px; margin-bottom: 10px;">
+  <form [formGroup]="uploadForm" novalidate>
+<div class="search"><mat-form-field class="search">
+  <input matInput placeholder="Pretraži..." formControlName="book" [(ngModel)]="book" >
+</mat-form-field>
+<mat-icon>search</mat-icon>
+</div>  
+  </form>
+  <div class="book" *ngFor="let book of (books | async) | filter: book   ">
+    <div class="row">
+      <div class="card column">
+        <div class="card-img-wrapper">
+          <img
+            src={{book.image}}
+            class="img-fluid"/> 
+            <ul class="list-inline books-icons animate text-center">
+              <li class="list-inline-item">
+                <button mat-raised-button class="btn btn-lg btn-secondary" (click)="openDetailsModal(book)">Prikaži detalje knjige</button>
+             </li>
+          </ul>
+        </div>
+        <div >
+        <div class="card-body ope">
+          
+        </div>
+        <h3 class="card-title">{{book.title}}</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div  class="pagination" >
+
+    <button class="btn btn-md btn-dark " (click)="getPage(currentPage - 1)" [disabled]="currentPage === 1">Prethodna</button>
+    <div class="current">Stranica: {{ currentPage }} od: {{totalItems}}</div>
+    <button class="btn btn-md btn-dark" (click)="getPage(currentPage + 1)">Sljedeca</button>
+    
+  </div>
+  <br><br>
+
+
+ 
+

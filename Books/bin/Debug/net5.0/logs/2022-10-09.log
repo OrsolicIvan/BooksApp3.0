@@ -1,0 +1,413 @@
+2022-10-09 14:10:02.1076 INFO Returned Book for id: 1
+2022-10-09 14:12:19.1039 INFO Returned Book for id: 1
+2022-10-09 14:12:19.1957 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:13:12.8146 INFO Returned Book for id: Modern PHP
+2022-10-09 14:13:20.7872 INFO Returned Book for id: 1
+2022-10-09 14:13:20.8361 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:14:14.8159 INFO Returned Book for id: 1
+2022-10-09 14:14:14.8802 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:14:14.8967 ERROR Failed executing DbCommand (109ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 14:14:14.9968 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-09 14:14:43.4272 INFO Returned Book for id: 0
+2022-10-09 14:14:43.4911 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:14:43.5062 ERROR Failed executing DbCommand (105ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 14:14:43.5406 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-09 14:14:46.0068 INFO Returned Book for id: 1
+2022-10-09 14:14:46.0338 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:14:46.0368 ERROR An error occurred using the connection to database 'AuthorDB' on server '(local)\sqlexpress'.
+2022-10-09 14:14:46.0368 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-09 14:14:54.3178 INFO Returned Book for id: 2
+2022-10-09 14:14:54.3585 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:14:54.3585 ERROR Failed executing DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 14:14:54.3671 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-09 14:22:05.3095 INFO Returned Book for id: 1
+2022-10-09 14:22:05.3771 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:22:05.3990 ERROR Failed executing DbCommand (110ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 14:22:05.4283 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-09 14:27:15.4803 INFO Returned Book for id: 1
+2022-10-09 14:27:15.5452 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:27:54.3787 INFO Returned Book for id: Modern PHP
+2022-10-09 14:28:02.2814 INFO Returned Book for id: 1
+2022-10-09 14:28:02.3355 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:29:22.0517 INFO Returned Book for id: 1
+2022-10-09 14:29:22.1196 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-09 14:37:24.9296 INFO Returned Book for id: 1
+2022-10-09 14:44:34.6621 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 14:47:31.4058 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 14:51:29.3035 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 14:57:26.6358 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 15:04:16.7575 INFO GetAllBooks initiated
+2022-10-09 15:11:42.8029 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 15:27:16.8227 INFO Create Book initiated
+2022-10-09 15:28:20.8946 ERROR Failed executing DbCommand (47ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 15:28:20.9572 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Images'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ff3cf2e7-3e5c-4427-a243-3eedfdc7354e
+Error Number:208,State:1,Class:16
+2022-10-09 15:28:21.0844 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 15:28:51.3836 ERROR Failed executing DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__id_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-09 15:28:51.3967 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Images'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ff3cf2e7-3e5c-4427-a243-3eedfdc7354e
+Error Number:208,State:1,Class:16
+2022-10-09 15:28:51.4685 ERROR An unhandled exception has occurred while executing the request.
+2022-10-09 15:30:52.4927 ERROR Failed executing DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-10-09 15:30:52.5603 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:5b60c62c-486d-43b2-ae31-da4866d0ec09
+Error Number:208,State:1,Class:16
+2022-10-09 15:31:18.4436 ERROR Failed executing DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-10-09 15:31:18.4784 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b875e593-5a3f-48c2-977c-1ae505cf0ccc
+Error Number:208,State:1,Class:16
+2022-10-09 15:32:50.7873 INFO Create Book initiated
+2022-10-09 21:36:07.5380 INFO Create Book initiated
+2022-10-09 21:36:18.7474 ERROR Failed executing DbCommand (66ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Images] ([BookId], [IsMain], [PublicId], [Url])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Images]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-10-09 21:36:18.9054 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Images_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e78fd16f-5ab3-40bc-80a7-5fa2f35d0607
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-09 21:36:19.0867 ERROR Something went wrong inside AddPhoto action: An error occurred while updating the entries. See the inner exception for details.
+2022-10-09 21:37:17.0388 INFO GetAllBooks initiated
+2022-10-09 21:37:45.7168 ERROR Failed executing DbCommand (36ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Images] ([BookId], [IsMain], [PublicId], [Url])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Images]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-10-09 21:37:45.7931 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Images_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:b167d70d-ed8f-4438-a30e-448a78b81b35
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-09 21:37:45.8740 ERROR Something went wrong inside AddPhoto action: An error occurred while updating the entries. See the inner exception for details.
+2022-10-09 21:45:04.3670 ERROR Failed executing DbCommand (151ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Images] ([BookId], [IsMain], [PublicId], [Url])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Images]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-10-09 21:45:04.4661 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Images_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9eec5fdd-01e4-47a7-886b-5d6fb803ad89
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-09 21:45:04.5624 ERROR Something went wrong inside AddPhoto action: An error occurred while updating the entries. See the inner exception for details.
+2022-10-09 21:46:20.7212 ERROR Failed executing DbCommand (98ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Images] ([BookId], [IsMain], [PublicId], [Url])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Images]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-10-09 21:46:20.7251 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Images_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9eec5fdd-01e4-47a7-886b-5d6fb803ad89
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-09 21:46:20.8244 ERROR Something went wrong inside AddPhoto action: An error occurred while updating the entries. See the inner exception for details.
+2022-10-09 21:46:34.8965 INFO GetAllBooks initiated
+2022-10-09 22:02:37.7404 INFO Create Book initiated

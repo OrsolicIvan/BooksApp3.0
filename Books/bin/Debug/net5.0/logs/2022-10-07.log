@@ -1,0 +1,324 @@
+2022-10-07 13:15:36.0778 INFO GeOwnedBooks initiated
+2022-10-07 13:47:50.7347 INFO Create Book initiated
+2022-10-07 13:47:54.5816 INFO GeOwnedBooks initiated
+2022-10-07 13:48:05.0671 INFO Delete book initiated
+2022-10-07 13:48:06.0639 INFO GeOwnedBooks initiated
+2022-10-07 13:48:10.7179 INFO Delete book initiated
+2022-10-07 13:48:10.8768 ERROR Failed executing DbCommand (89ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-10-07 13:48:11.2184 INFO GeOwnedBooks initiated
+2022-10-07 13:48:11.2568 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e40e456b-ef5b-42bf-a8f3-df31b6276312
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-07 13:48:11.4756 ERROR Exception Caught
+2022-10-07 14:05:19.3435 INFO GeOwnedBooks initiated
+2022-10-07 14:05:30.7696 INFO GeOwnedBooks initiated
+2022-10-07 14:05:42.1470 INFO GeOwnedBooks initiated
+2022-10-07 14:05:47.4547 INFO Delete book initiated
+2022-10-07 14:05:47.6232 ERROR Failed executing DbCommand (142ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-10-07 14:05:47.6263 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:77e649b8-c1e1-4c6a-8f3d-f916e9865432
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-07 14:05:47.7532 ERROR Exception Caught
+2022-10-07 14:05:47.8271 INFO GeOwnedBooks initiated
+2022-10-07 14:05:52.9992 INFO Delete book initiated
+2022-10-07 14:05:53.3895 INFO GeOwnedBooks initiated
+2022-10-07 14:06:08.7023 INFO UpdateBook initiated
+2022-10-07 14:06:10.1084 INFO GeOwnedBooks initiated
+2022-10-07 14:14:45.1977 INFO Create Book initiated
+2022-10-07 14:14:49.0168 INFO GeOwnedBooks initiated
+2022-10-07 14:17:55.7023 INFO GeOwnedBooks initiated
+2022-10-07 14:18:02.6876 INFO GeOwnedBooks initiated
+2022-10-07 14:18:12.4857 INFO GeOwnedBooks initiated
+2022-10-07 14:18:21.6571 INFO GeOwnedBooks initiated
+2022-10-07 14:18:32.8121 INFO GeOwnedBooks initiated
+2022-10-07 14:18:48.9523 INFO Create Book initiated
+2022-10-07 14:18:53.2806 INFO GeOwnedBooks initiated
+2022-10-07 14:19:34.9069 INFO GeOwnedBooks initiated
+2022-10-07 14:19:47.6557 INFO Create Book initiated
+2022-10-07 14:19:50.7507 INFO GeOwnedBooks initiated
+2022-10-07 14:20:13.9378 INFO Create Book initiated
+2022-10-07 14:20:17.8779 INFO GeOwnedBooks initiated
+2022-10-07 14:24:56.9521 INFO GeOwnedBooks initiated
+2022-10-07 14:24:58.8589 INFO GeOwnedBooks initiated
+2022-10-07 14:25:10.3580 INFO GeOwnedBooks initiated
+2022-10-07 14:25:18.3768 INFO GeOwnedBooks initiated
+2022-10-07 14:25:24.8611 INFO Delete book initiated
+2022-10-07 14:25:25.3752 INFO GeOwnedBooks initiated
+2022-10-07 14:25:34.3604 INFO Create Book initiated
+2022-10-07 14:25:37.1393 INFO GeOwnedBooks initiated
+2022-10-07 14:25:45.2025 INFO Delete book initiated
+2022-10-07 14:25:45.4364 INFO GeOwnedBooks initiated
+2022-10-07 14:25:52.3018 INFO GeOwnedBooks initiated
+2022-10-07 14:26:05.2486 INFO GeOwnedBooks initiated
+2022-10-07 14:27:47.3117 INFO Create Book initiated
+2022-10-07 14:27:49.4831 INFO GeOwnedBooks initiated
+2022-10-07 14:29:01.2028 INFO GeOwnedBooks initiated
+2022-10-07 14:29:05.8004 INFO GeOwnedBooks initiated
+2022-10-07 14:29:07.5158 INFO GeOwnedBooks initiated
+2022-10-07 14:29:11.4213 INFO Delete book initiated
+2022-10-07 14:29:11.9212 INFO GeOwnedBooks initiated
+2022-10-07 14:29:19.7355 INFO Create Book initiated
+2022-10-07 14:29:21.8318 INFO GeOwnedBooks initiated
+2022-10-07 14:30:47.9680 INFO GeOwnedBooks initiated
+2022-10-07 14:31:14.3597 INFO GeOwnedBooks initiated
+2022-10-07 14:31:29.2965 INFO GeOwnedBooks initiated
+2022-10-07 14:31:36.8468 INFO GeOwnedBooks initiated
+2022-10-07 14:31:37.5463 INFO GeOwnedBooks initiated
+2022-10-07 14:31:40.4885 INFO GeOwnedBooks initiated
+2022-10-07 14:31:45.1733 INFO Delete book initiated
+2022-10-07 14:31:45.3935 INFO GeOwnedBooks initiated
+2022-10-07 14:31:53.1905 INFO Create Book initiated
+2022-10-07 14:31:55.5175 INFO GeOwnedBooks initiated
+2022-10-07 14:32:00.4520 INFO Delete book initiated
+2022-10-07 14:32:00.6746 INFO GeOwnedBooks initiated
+2022-10-07 14:32:08.7808 INFO Create Book initiated
+2022-10-07 14:32:11.0527 INFO GeOwnedBooks initiated
+2022-10-07 14:32:17.4994 INFO GeOwnedBooks initiated
+2022-10-07 14:32:19.5168 INFO GeOwnedBooks initiated
+2022-10-07 14:32:23.6718 INFO GeOwnedBooks initiated
+2022-10-07 14:32:27.2030 INFO Delete book initiated
+2022-10-07 14:32:27.3938 INFO GeOwnedBooks initiated
+2022-10-07 14:32:34.5326 INFO Create Book initiated
+2022-10-07 14:32:36.2382 INFO GeOwnedBooks initiated
+2022-10-07 17:28:16.1746 INFO Create Book initiated
+2022-10-07 17:40:24.9222 ERROR An unhandled exception has occurred while executing the request.
+2022-10-07 17:40:52.3299 INFO GetAllBooks initiated
+2022-10-07 17:41:30.7355 INFO Returned Book for id: 1
+2022-10-07 17:41:30.8045 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 17:43:18.7272 INFO Returned Book for id: 1
+2022-10-07 17:43:18.7979 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 17:43:18.8141 ERROR Failed executing DbCommand (115ms) [Parameters=[@__bookId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__bookId_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-07 17:43:18.9042 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-07 17:44:00.1434 INFO Returned Book for id: 1
+2022-10-07 17:44:00.2128 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 17:45:04.3357 INFO Returned Book for id: 1
+2022-10-07 17:45:04.4043 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 17:45:04.4214 ERROR Failed executing DbCommand (112ms) [Parameters=[@__bookId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BookId], [t].[BookTitle], [t].[BookYear], [t].[OwnerId], [t].[RenterId], [t].[Url], [i].[Id], [i].[BookId], [i].[IsMain], [i].[PublicId], [i].[Url]
+FROM (
+    SELECT TOP(1) [b].[BookId], [b].[BookTitle], [b].[BookYear], [b].[OwnerId], [b].[RenterId], [b].[Url]
+    FROM [Books] AS [b]
+    WHERE [b].[BookId] = @__bookId_0
+) AS [t]
+LEFT JOIN [Images] AS [i] ON [t].[BookId] = [i].[BookId]
+ORDER BY [t].[BookId], [i].[Id]
+2022-10-07 17:45:04.4740 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-07 19:09:58.7836 INFO GetAllBooks initiated
+2022-10-07 19:10:07.8683 INFO Returned Book for id: 1
+2022-10-07 19:10:07.9888 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:10:08.0618 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid attempt to read when no data is present.
+   at Microsoft.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method43(Closure , QueryContext , DbDataReader )
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.InitializeIncludeCollection[TParent,TNavigationEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, TParent entity, Func`3 parentIdentifier, Func`3 outerIdentifier, INavigationBase navigation, IClrCollectionAccessor clrCollectionAccessor, Boolean trackingQuery, Boolean setLoaded)
+   at lambda_method53(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-07 19:13:15.8089 INFO Returned Book for id: 1
+2022-10-07 19:13:15.9115 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:14:28.8037 INFO Returned Book for id: 1
+2022-10-07 19:14:28.9171 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:15:35.7801 INFO Returned Book for id: 1
+2022-10-07 19:15:35.8770 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:15:52.9412 INFO Returned Book for id: Modern PHP
+2022-10-07 19:18:09.7113 INFO Returned Book for id: 1
+2022-10-07 19:18:09.7975 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:18:25.0164 INFO Create Book initiated
+2022-10-07 19:18:31.2650 INFO GetAllBooks initiated
+2022-10-07 19:18:39.4371 INFO Returned Book for id: 2
+2022-10-07 19:18:39.4831 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:20:52.7089 INFO Returned Book for id: 1
+2022-10-07 19:20:52.8118 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:21:45.7295 INFO Returned Book for id: 1
+2022-10-07 19:21:45.8310 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:26:24.5770 INFO Returned Book for id: 1
+2022-10-07 19:26:24.6775 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:27:23.7843 INFO Returned all authors from database
+2022-10-07 19:27:31.3428 INFO Returned Author for id: 1
+2022-10-07 19:29:55.0778 INFO Returned Book for id: 1
+2022-10-07 19:29:55.2044 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:29:55.3971 ERROR An exception occurred while iterating over the results of a query for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: Invalid attempt to call CheckDataIsReady when reader is closed.
+   at Microsoft.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method107(Closure , QueryContext , DbDataReader )
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.InitializeIncludeCollection[TParent,TNavigationEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, TParent entity, Func`3 parentIdentifier, Func`3 outerIdentifier, INavigationBase navigation, IClrCollectionAccessor clrCollectionAccessor, Boolean trackingQuery, Boolean setLoaded)
+   at lambda_method117(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-10-07 19:29:57.5178 INFO Returned Book for id: 2
+2022-10-07 19:29:57.5595 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:34:33.7585 INFO Returned Book for id: 1
+2022-10-07 19:34:33.9033 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-07 19:37:16.2687 INFO Returned Book for id: 1
+2022-10-07 19:37:16.3718 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> GetBookDto
+System.Object -> Books.Dto.GetBookDto
+2022-10-07 19:42:42.7139 INFO Returned Book for id: 1
+2022-10-07 19:42:42.8174 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-07 19:43:56.0368 INFO Returned Book for id: 1
+2022-10-07 19:43:56.1405 ERROR Something went wrong inside GetBookId action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> BookDto
+System.Object -> Books.Dto.BookDto
+2022-10-07 19:46:06.0871 INFO Returned Book for id: 1
+2022-10-07 19:47:35.4311 INFO Returned Book for id: 1

@@ -1,0 +1,11 @@
+2022-09-16 18:30:59.6705 DEBUG Application started
+2022-09-16 18:35:21.7901 DEBUG Application started
+2022-09-16 18:37:17.3998 DEBUG Application started
+2022-09-16 18:37:24.4140 INFO GetAllBooks initiated
+2022-09-16 18:38:35.8645 INFO GetRentedBooks initiated
+2022-09-16 18:38:53.9155 INFO Delete movie initiated
+2022-09-16 18:38:54.0928 ERROR Exception Caught
+2022-09-16 18:39:21.1328 INFO GetAllBooks initiated
+2022-09-16 18:39:51.1485 INFO Returned all books from database
+2022-09-16 18:40:11.5087 INFO Delete movie initiated
+2022-09-16 18:40:11.5878 ERROR Exception Caught

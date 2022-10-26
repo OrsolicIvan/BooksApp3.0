@@ -1,0 +1,49 @@
+<header>
+  <nav class="navbar  navbar-dark fixed-top bg-dark">
+    <div class="col-md-9 col-sm-9 col-9 text-end">
+    <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+  </div>
+    <div class="menu container" [class.menuClasse]="menuVariable">
+      <ul>
+        <ng-container *ngIf="accountService.currentUser$ | async">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/books">Knjige</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *appHasRole='["Member"]' routerLink="/added-books" routerLinkActive="active">Iznajmi knjigu</a>
+          </li>
+          <li class="nav-item">
+            <a *appHasRole='["Moderator"]' routerLink="/upload-book" class="nav-link"> Objavi knjigu </a>
+          </li>
+          <li class="nav-item">
+            <a *appHasRole='["Member"]' routerLink="/rented-books" class="nav-link"> Moje knjige </a>
+          </li>
+          <li class="nav-item">
+            <a *appHasRole='["Moderator"]' routerLink="/unrented-books" class="nav-link"> Moje knjige </a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/contact-form" class="nav-link"> Kontakt</a>
+          </li>
+        </ng-container>
+    </ul>
+    
+      <a class="navbar-brand" routerLink=""></a>
+        <div class="dropdown" *ngIf="accountService.currentUser$ | async as user">
+          
+          <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <mat-icon>person</mat-icon><span class="aligned-with-icon">Dobrodošao {{user.username | titlecase}}</span> 
+              </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a *appHasRole='["Admin"]' routerLink="/admin" class="dropdown-item"> Admin panel </a>
+              <a class="dropdown-item" (click)="logout()"> Odjava </a>
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+

@@ -1,0 +1,92 @@
+<ngb-carousel 
+*ngIf="!registerMode && !loginMode">
+   <ng-template ngbSlide id="firstSlide"> 
+     <div class="picsum-img-wrapper">
+       <img src="assets/library.jpg" alt="Angular Carousel 1">
+     </div>
+     <div class="carousel-caption text-start">
+            
+         <div class="row">
+          <div class="card column">
+           <div class="uredjenost col-xl-6 col-lg-7 text-white">
+             <h3 class="dobrodosli">Dobrodošli u knjižnicu
+              <p>Prijavite se,</p>
+              <p>ili napravite korisnički račun
+              </p>
+             
+              <a (click)="loginToggle()" class="btn btn-lg btn-secondary">Prijavi se</a>
+              <a (click)="registerToggle()" class="btn btn-lg btn-secondary">Registriraj se</a>
+             </h3>
+           </div>
+            </div>
+         </div>
+     </div>
+   </ng-template>
+    
+ </ngb-carousel>
+ <div *ngIf="registerMode" class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+        </div>
+    </div>
+ </div>
+ <div *ngIf="loginMode" class="container">
+  <div class="row justify-content-center">
+      <div class="col-4">
+          <app-login (cancelLogin)="cancelLoginMode($event)"></app-login>
+      </div>
+  </div>
+</div>
+<div class="container" *ngIf="!registerMode && !loginMode">
+  <!-- Top Navigation -->
+  <div class="wrapper">
+    <ul class="stage clearfix">
+
+      <li class="scene">
+        <div class="movie" onclick="return true">
+          <div class="poster"></div>
+          <div class="info">
+            <header>
+             <h1>C programming</h1>
+            </header>
+            <h6>
+              Ova knjiga je predviđena za studente sa malo ili sa nikakvim prethodnim znanjem u programiranju. Korisna je zbog širokog spektra kurseva koji uključuju BTEC, City i Guild i ostali profesionalni kursevi.Autor pokriva C jezik (ANSI) standard, također prestavlja  dizajniranje programa i testiranje.
+             
+            </h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="scene">
+        <div class="movie" onclick="return true">
+          <div class="poster"></div>
+          <div class="info">
+            <header>
+              <h1>Linear and nonlinear programming</h1>
+            </header>
+            <h6>
+              Ova knjiga sadrži matematičke koncepte i teorije na temu operacijski istraživanja. Koncept optimizacijski tehnika koje formiraju glavnu temu ove knjige sastoji se od grana matematike, fizike i inženjerstva. Jedna od najboljih knjiga za shvaćanje linearnog i nelinearnog programiranja.
+            </h6>
+          </div>
+        </div>
+      </li>
+
+      <li class="scene">
+        <div class="movie" onclick="return true">
+          <div class="poster"></div>
+          <div class="info">
+            <header>
+              <h1>Quadratic programming</h1>
+            </header>
+            <h6>
+              Kvadratno programiranje je matematička tehnika koja omogućuje optimizaciju kvadratne funkcije u nekoliko varijabli. QP je podskup operacijskog istraživanja i sljedeća je viša poluga sofisticiranosti od linearnog programiranja. To je ključni matematički alat u optimizaciji portfelja i strukturnoj plastičnosti.
+            </h6>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div><!-- /wrapper -->
+</div><!-- /container -->
+<br>

@@ -1,0 +1,40 @@
+<div class="content">
+  <div class="card column">
+    <div class="card-container">
+      <mat-card class="kartica">
+        <mat-card-header>
+           <mat-card-title>{{book.bookTitle}}</mat-card-title>
+        </mat-card-header>  
+      <div class="card-img-wrapper" data-mdb-ripple-color="light">
+        <img
+          src="{{book.images?.url}}"
+          class="img-fluid"
+          onerror="this.src='assets/noimg.jpg'"
+        />
+        <mat-card-content>
+        <ul class="list-inline books-icons animate text-center">
+          <li class="list-inline-item">
+             <button mat-raised-button class="btn btn-lg btn-secondary" (click)="onSubmit()">Iznajmi knjigu</button>
+          </li>
+      </ul>
+        </mat-card-content>
+      </div>
+      <div class="card-body">
+        <h4>Godina izdavanja: {{book.bookYear}}</h4>
+        Autori:
+        <div *ngFor="let bookAuthors of book.book_Authors" class="list-inline-item">
+          <div >
+            <p>{{ bookAuthors.author.authorName }}, </p>
+          </div>
+        </div>
+      </div>
+      </mat-card>
+    </div>
+    
+</div>
+</div>
+
+
+
+
+

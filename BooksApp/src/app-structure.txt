@@ -1,0 +1,14 @@
+● src
++---● app
+|   +--● author-info
+|   |  |--author-info.component.ts|.html|.css
+|   |  +--● author-form
+|   |  |  |--author-form.component.ts|.html|.css
+|   |   
+|   +--● shared
+|   |  |--author.service.ts
+|   |  |--author.model.ts
+|   |
+|   |--app.module.ts
+|
+|--index.html (cdn path for bootstrap & fa icons)

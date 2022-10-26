@@ -1,0 +1,555 @@
+2022-10-12 12:03:36.3664 INFO GeOwnedBooks initiated
+2022-10-12 12:41:56.7115 INFO GeOwnedBooks initiated
+2022-10-12 12:44:52.2404 INFO GeOwnedBooks initiated
+2022-10-12 12:48:37.8837 INFO GeOwnedBooks initiated
+2022-10-12 12:48:55.6337 INFO GeOwnedBooks initiated
+2022-10-12 12:49:08.2890 INFO GeOwnedBooks initiated
+2022-10-12 12:49:27.1941 INFO GeOwnedBooks initiated
+2022-10-12 12:51:24.7585 INFO GeOwnedBooks initiated
+2022-10-12 12:51:40.1942 INFO GeOwnedBooks initiated
+2022-10-12 12:51:55.7723 INFO GeOwnedBooks initiated
+2022-10-12 13:19:22.8679 INFO GeOwnedBooks initiated
+2022-10-12 13:19:41.9129 INFO GeOwnedBooks initiated
+2022-10-12 13:20:00.6315 INFO GeOwnedBooks initiated
+2022-10-12 13:23:18.8971 INFO GeOwnedBooks initiated
+2022-10-12 13:25:20.4628 INFO GeOwnedBooks initiated
+2022-10-12 13:25:43.8503 INFO GeOwnedBooks initiated
+2022-10-12 13:25:54.9914 INFO GeOwnedBooks initiated
+2022-10-12 13:25:56.2877 INFO GeOwnedBooks initiated
+2022-10-12 13:26:08.3823 INFO GeOwnedBooks initiated
+2022-10-12 13:31:47.0999 INFO GeOwnedBooks initiated
+2022-10-12 13:32:05.1956 INFO GeOwnedBooks initiated
+2022-10-12 13:32:22.5576 INFO GeOwnedBooks initiated
+2022-10-12 13:36:34.6479 INFO GeOwnedBooks initiated
+2022-10-12 13:36:43.7255 INFO GeOwnedBooks initiated
+2022-10-12 13:52:40.8215 INFO GeOwnedBooks initiated
+2022-10-12 13:52:47.2900 INFO GeOwnedBooks initiated
+2022-10-12 13:53:15.6010 INFO GeOwnedBooks initiated
+2022-10-12 13:53:18.1026 INFO GeOwnedBooks initiated
+2022-10-12 14:00:17.5849 INFO GeOwnedBooks initiated
+2022-10-12 14:06:50.8838 INFO GeOwnedBooks initiated
+2022-10-12 14:07:01.5258 INFO Create Book initiated
+2022-10-12 14:07:03.9774 INFO GeOwnedBooks initiated
+2022-10-12 14:08:11.9462 INFO GeOwnedBooks initiated
+2022-10-12 14:08:53.4133 INFO GeOwnedBooks initiated
+2022-10-12 14:09:06.9914 INFO GeOwnedBooks initiated
+2022-10-12 14:09:36.6324 INFO GeOwnedBooks initiated
+2022-10-12 14:09:36.9442 INFO GeOwnedBooks initiated
+2022-10-12 14:09:39.2256 INFO GeOwnedBooks initiated
+2022-10-12 14:09:39.5537 INFO GeOwnedBooks initiated
+2022-10-12 14:09:47.3348 INFO GeOwnedBooks initiated
+2022-10-12 14:09:47.6630 INFO GeOwnedBooks initiated
+2022-10-12 14:10:15.2265 INFO GeOwnedBooks initiated
+2022-10-12 14:10:15.6635 INFO GeOwnedBooks initiated
+2022-10-12 14:10:16.8381 INFO GeOwnedBooks initiated
+2022-10-12 14:10:17.2727 INFO GeOwnedBooks initiated
+2022-10-12 14:10:18.4906 INFO GeOwnedBooks initiated
+2022-10-12 14:10:18.5634 INFO GeOwnedBooks initiated
+2022-10-12 14:10:34.4130 INFO GeOwnedBooks initiated
+2022-10-12 14:10:34.4922 INFO GeOwnedBooks initiated
+2022-10-12 14:10:36.4607 INFO GeOwnedBooks initiated
+2022-10-12 14:10:36.7509 INFO GeOwnedBooks initiated
+2022-10-12 14:10:48.7751 INFO GeOwnedBooks initiated
+2022-10-12 14:10:49.2567 INFO GeOwnedBooks initiated
+2022-10-12 14:11:58.0559 INFO GetUnRentedBooks initiated
+2022-10-12 14:12:10.3359 INFO GetRentedBooks initiated
+2022-10-12 14:12:12.4066 INFO GetUnRentedBooks initiated
+2022-10-12 14:12:16.4599 INFO RentBook 
+2022-10-12 14:12:17.1006 INFO GetUnRentedBooks initiated
+2022-10-12 14:12:19.3562 INFO GetRentedBooks initiated
+2022-10-12 14:12:23.1477 INFO unRentBook 
+2022-10-12 14:12:23.6364 INFO GetRentedBooks initiated
+2022-10-12 14:12:25.7723 INFO GetUnRentedBooks initiated
+2022-10-12 14:18:27.4135 INFO GeOwnedBooks initiated
+2022-10-12 14:18:47.8360 INFO GeOwnedBooks initiated
+2022-10-12 14:18:48.2729 INFO GeOwnedBooks initiated
+2022-10-12 14:18:53.6005 INFO GeOwnedBooks initiated
+2022-10-12 14:18:53.8972 INFO GeOwnedBooks initiated
+2022-10-12 14:19:03.6940 INFO GeOwnedBooks initiated
+2022-10-12 14:19:04.4130 INFO GeOwnedBooks initiated
+2022-10-12 14:19:09.2256 INFO GeOwnedBooks initiated
+2022-10-12 14:19:09.9010 INFO GeOwnedBooks initiated
+2022-10-12 14:19:14.4747 INFO GeOwnedBooks initiated
+2022-10-12 14:19:14.5688 INFO GeOwnedBooks initiated
+2022-10-12 14:19:26.1469 INFO GeOwnedBooks initiated
+2022-10-12 14:19:26.4752 INFO GeOwnedBooks initiated
+2022-10-12 14:19:38.6318 INFO GeOwnedBooks initiated
+2022-10-12 14:19:39.0547 INFO GeOwnedBooks initiated
+2022-10-12 14:19:41.2188 INFO GeOwnedBooks initiated
+2022-10-12 14:19:41.7097 INFO GeOwnedBooks initiated
+2022-10-12 14:19:45.7092 INFO GeOwnedBooks initiated
+2022-10-12 14:19:45.7562 INFO GeOwnedBooks initiated
+2022-10-12 14:20:07.0691 INFO GeOwnedBooks initiated
+2022-10-12 14:20:07.5066 INFO GeOwnedBooks initiated
+2022-10-12 14:20:10.8678 INFO GeOwnedBooks initiated
+2022-10-12 14:20:11.1937 INFO GeOwnedBooks initiated
+2022-10-12 14:20:16.8656 INFO GeOwnedBooks initiated
+2022-10-12 14:20:16.9128 INFO GeOwnedBooks initiated
+2022-10-12 14:20:28.2874 INFO GeOwnedBooks initiated
+2022-10-12 14:20:28.6025 INFO GeOwnedBooks initiated
+2022-10-12 14:20:45.4594 INFO GeOwnedBooks initiated
+2022-10-12 14:20:45.7755 INFO GeOwnedBooks initiated
+2022-10-12 14:21:02.8669 INFO GeOwnedBooks initiated
+2022-10-12 14:21:03.1025 INFO GeOwnedBooks initiated
+2022-10-12 14:21:05.9501 INFO GeOwnedBooks initiated
+2022-10-12 14:21:06.1473 INFO GeOwnedBooks initiated
+2022-10-12 14:47:59.0902 INFO Create Book initiated
+2022-10-12 14:48:02.3036 INFO GeOwnedBooks initiated
+2022-10-12 14:48:59.0225 INFO GeOwnedBooks initiated
+2022-10-12 14:49:08.9465 INFO GeOwnedBooks initiated
+2022-10-12 14:49:28.2888 INFO GeOwnedBooks initiated
+2022-10-12 14:49:29.8427 INFO GeOwnedBooks initiated
+2022-10-12 14:49:39.4487 INFO GeOwnedBooks initiated
+2022-10-12 14:50:17.3889 INFO GeOwnedBooks initiated
+2022-10-12 14:50:29.5596 INFO GeOwnedBooks initiated
+2022-10-12 14:50:30.7725 INFO GeOwnedBooks initiated
+2022-10-12 14:50:35.1321 INFO GeOwnedBooks initiated
+2022-10-12 14:50:43.1647 INFO Create Book initiated
+2022-10-12 14:50:46.0394 INFO GeOwnedBooks initiated
+2022-10-12 14:50:57.9442 INFO GeOwnedBooks initiated
+2022-10-12 14:51:14.3365 INFO GeOwnedBooks initiated
+2022-10-12 14:51:38.9751 INFO GeOwnedBooks initiated
+2022-10-12 14:54:18.6006 INFO GeOwnedBooks initiated
+2022-10-12 14:54:23.5226 INFO GeOwnedBooks initiated
+2022-10-12 14:54:31.5528 INFO Create Book initiated
+2022-10-12 14:54:34.1473 INFO GeOwnedBooks initiated
+2022-10-12 14:55:57.0865 INFO GeOwnedBooks initiated
+2022-10-12 14:56:05.9909 INFO GeOwnedBooks initiated
+2022-10-12 14:56:10.1378 INFO GeOwnedBooks initiated
+2022-10-12 14:56:20.0530 INFO Create Book initiated
+2022-10-12 14:56:22.6676 INFO GeOwnedBooks initiated
+2022-10-12 15:00:32.4762 INFO GeOwnedBooks initiated
+2022-10-12 15:00:42.7998 INFO Create Book initiated
+2022-10-12 15:00:44.9468 INFO GeOwnedBooks initiated
+2022-10-12 15:06:44.3200 INFO GeOwnedBooks initiated
+2022-10-12 15:06:54.4798 INFO Create Book initiated
+2022-10-12 15:06:57.2561 INFO GeOwnedBooks initiated
+2022-10-12 15:07:06.9908 INFO GeOwnedBooks initiated
+2022-10-12 15:17:31.4131 INFO GeOwnedBooks initiated
+2022-10-12 15:17:34.4133 INFO GeOwnedBooks initiated
+2022-10-12 15:17:47.2251 INFO Create Book initiated
+2022-10-12 15:17:49.9907 INFO GeOwnedBooks initiated
+2022-10-12 15:20:23.8342 INFO GeOwnedBooks initiated
+2022-10-12 15:21:21.3063 INFO GeOwnedBooks initiated
+2022-10-12 15:21:33.4368 INFO GeOwnedBooks initiated
+2022-10-12 15:22:48.8664 INFO GeOwnedBooks initiated
+2022-10-12 15:23:38.2564 INFO GeOwnedBooks initiated
+2022-10-12 15:23:46.4907 INFO GeOwnedBooks initiated
+2022-10-12 15:24:02.9169 INFO GeOwnedBooks initiated
+2022-10-12 15:24:08.1468 INFO GeOwnedBooks initiated
+2022-10-12 15:24:29.8502 INFO GeOwnedBooks initiated
+2022-10-12 15:24:44.8662 INFO GetAllBooks initiated
+2022-10-12 15:27:10.1625 INFO Create Book initiated
+2022-10-12 15:27:12.9917 INFO GeOwnedBooks initiated
+2022-10-12 15:27:24.4596 INFO GeOwnedBooks initiated
+2022-10-12 15:28:12.0603 INFO GeOwnedBooks initiated
+2022-10-12 15:28:26.1478 INFO GeOwnedBooks initiated
+2022-10-12 16:15:01.5071 INFO GeOwnedBooks initiated
+2022-10-12 16:15:27.5413 INFO Create Book initiated
+2022-10-12 16:15:30.2305 INFO GeOwnedBooks initiated
+2022-10-12 16:15:55.6316 INFO GeOwnedBooks initiated
+2022-10-12 16:17:22.8513 INFO GeOwnedBooks initiated
+2022-10-12 16:18:39.6163 INFO GeOwnedBooks initiated
+2022-10-12 16:19:09.9014 INFO GeOwnedBooks initiated
+2022-10-12 16:19:25.4597 INFO Create Book initiated
+2022-10-12 16:19:31.9440 INFO Create Book initiated
+2022-10-12 16:19:39.2569 INFO Create Book initiated
+2022-10-12 16:19:47.0569 INFO Create Book initiated
+2022-10-12 16:19:49.1080 INFO GeOwnedBooks initiated
+2022-10-12 16:20:36.5537 INFO UpdateBook initiated
+2022-10-12 16:20:37.9750 INFO GeOwnedBooks initiated
+2022-10-12 16:23:37.0216 INFO GeOwnedBooks initiated
+2022-10-12 16:23:50.7250 INFO GeOwnedBooks initiated
+2022-10-12 16:24:59.1006 INFO GetUnRentedBooks initiated
+2022-10-12 16:25:17.0251 INFO GetUnRentedBooks initiated
+2022-10-12 16:25:17.2939 INFO GeOwnedBooks initiated
+2022-10-12 16:25:24.0695 INFO GetUnRentedBooks initiated
+2022-10-12 16:25:24.6317 INFO GeOwnedBooks initiated
+2022-10-12 16:25:28.2254 INFO GetRentedBooks initiated
+2022-10-12 16:25:30.0221 INFO GetUnRentedBooks initiated
+2022-10-12 16:25:33.5076 INFO RentBook 
+2022-10-12 16:25:34.0377 INFO GetUnRentedBooks initiated
+2022-10-12 16:25:37.8663 INFO GetRentedBooks initiated
+2022-10-12 16:25:44.5697 INFO unRentBook 
+2022-10-12 16:25:45.0860 INFO GetRentedBooks initiated
+2022-10-12 16:25:47.3521 INFO GetUnRentedBooks initiated
+2022-10-12 16:28:07.3974 INFO GeOwnedBooks initiated
+2022-10-12 16:31:48.6153 INFO GeOwnedBooks initiated
+2022-10-12 16:32:11.2408 INFO GeOwnedBooks initiated
+2022-10-12 16:32:19.6624 INFO GeOwnedBooks initiated
+2022-10-12 16:32:23.8854 INFO GeOwnedBooks initiated
+2022-10-12 16:32:32.5064 INFO GeOwnedBooks initiated
+2022-10-12 16:32:39.9501 INFO GeOwnedBooks initiated
+2022-10-12 16:32:51.7112 INFO GeOwnedBooks initiated
+2022-10-12 16:33:17.8529 INFO GeOwnedBooks initiated
+2022-10-12 16:33:17.9457 INFO GeOwnedBooks initiated
+2022-10-12 16:33:30.8974 INFO GeOwnedBooks initiated
+2022-10-12 16:33:30.9594 INFO GeOwnedBooks initiated
+2022-10-12 17:15:55.6637 INFO GeOwnedBooks initiated
+2022-10-12 17:15:57.4438 INFO GeOwnedBooks initiated
+2022-10-12 17:16:06.0066 INFO GeOwnedBooks initiated
+2022-10-12 17:16:06.0066 INFO GeOwnedBooks initiated
+2022-10-12 17:16:09.3540 INFO GeOwnedBooks initiated
+2022-10-12 17:16:09.4476 INFO GeOwnedBooks initiated
+2022-10-12 17:16:24.5855 INFO GeOwnedBooks initiated
+2022-10-12 17:16:24.6865 INFO GeOwnedBooks initiated
+2022-10-12 17:17:18.1043 INFO GeOwnedBooks initiated
+2022-10-12 17:17:18.3811 INFO GeOwnedBooks initiated
+2022-10-12 17:17:26.5690 INFO GeOwnedBooks initiated
+2022-10-12 17:17:26.9594 INFO GeOwnedBooks initiated
+2022-10-12 17:17:52.0245 INFO GeOwnedBooks initiated
+2022-10-12 17:17:52.0536 INFO GeOwnedBooks initiated
+2022-10-12 17:18:02.9923 INFO GeOwnedBooks initiated
+2022-10-12 17:18:03.3267 INFO GeOwnedBooks initiated
+2022-10-12 17:18:10.6157 INFO GeOwnedBooks initiated
+2022-10-12 17:18:10.7098 INFO GeOwnedBooks initiated
+2022-10-12 17:18:20.6625 INFO GeOwnedBooks initiated
+2022-10-12 17:18:20.7405 INFO GeOwnedBooks initiated
+2022-10-12 17:18:27.3187 INFO GeOwnedBooks initiated
+2022-10-12 17:18:27.3817 INFO GeOwnedBooks initiated
+2022-10-12 17:18:46.8816 INFO GeOwnedBooks initiated
+2022-10-12 17:18:47.1810 INFO GeOwnedBooks initiated
+2022-10-12 17:18:51.6624 INFO GeOwnedBooks initiated
+2022-10-12 17:18:51.7254 INFO GeOwnedBooks initiated
+2022-10-12 17:18:59.6312 INFO GeOwnedBooks initiated
+2022-10-12 17:18:59.9124 INFO GeOwnedBooks initiated
+2022-10-12 17:19:09.8973 INFO GeOwnedBooks initiated
+2022-10-12 17:19:09.8973 INFO GeOwnedBooks initiated
+2022-10-12 17:19:28.6509 INFO GeOwnedBooks initiated
+2022-10-12 17:19:28.6781 INFO GeOwnedBooks initiated
+2022-10-12 17:19:49.7722 INFO GeOwnedBooks initiated
+2022-10-12 17:19:49.8049 INFO GeOwnedBooks initiated
+2022-10-12 17:19:52.3749 INFO GeOwnedBooks initiated
+2022-10-12 17:19:52.3968 INFO GeOwnedBooks initiated
+2022-10-12 17:20:05.0420 INFO GeOwnedBooks initiated
+2022-10-12 17:20:05.4752 INFO GeOwnedBooks initiated
+2022-10-12 17:21:08.7095 INFO GeOwnedBooks initiated
+2022-10-12 17:21:09.1786 INFO GeOwnedBooks initiated
+2022-10-12 17:21:18.2732 INFO GeOwnedBooks initiated
+2022-10-12 17:21:18.3029 INFO GeOwnedBooks initiated
+2022-10-12 17:21:21.2309 INFO GeOwnedBooks initiated
+2022-10-12 17:21:21.2902 INFO GeOwnedBooks initiated
+2022-10-12 17:21:23.1315 INFO GeOwnedBooks initiated
+2022-10-12 17:21:23.1483 INFO GeOwnedBooks initiated
+2022-10-12 17:21:50.7124 INFO GeOwnedBooks initiated
+2022-10-12 17:21:51.1789 INFO GeOwnedBooks initiated
+2022-10-12 17:21:55.4646 INFO GeOwnedBooks initiated
+2022-10-12 17:21:55.4815 INFO GeOwnedBooks initiated
+2022-10-12 17:22:09.9178 INFO GeOwnedBooks initiated
+2022-10-12 17:22:10.1829 INFO GeOwnedBooks initiated
+2022-10-12 17:22:31.4139 INFO GeOwnedBooks initiated
+2022-10-12 17:22:31.5687 INFO GeOwnedBooks initiated
+2022-10-12 17:22:48.3968 INFO GeOwnedBooks initiated
+2022-10-12 17:22:48.4296 INFO GeOwnedBooks initiated
+2022-10-12 17:23:00.8830 INFO GeOwnedBooks initiated
+2022-10-12 17:23:00.8830 INFO GeOwnedBooks initiated
+2022-10-12 17:23:03.6664 INFO GeOwnedBooks initiated
+2022-10-12 17:23:03.6960 INFO GeOwnedBooks initiated
+2022-10-12 17:23:15.5068 INFO GeOwnedBooks initiated
+2022-10-12 17:23:15.6804 INFO GeOwnedBooks initiated
+2022-10-12 17:23:19.1392 INFO GeOwnedBooks initiated
+2022-10-12 17:23:19.1825 INFO GeOwnedBooks initiated
+2022-10-12 17:23:38.6467 INFO GeOwnedBooks initiated
+2022-10-12 17:23:38.6788 INFO GeOwnedBooks initiated
+2022-10-12 17:24:14.5697 INFO GeOwnedBooks initiated
+2022-10-12 17:24:14.5697 INFO GeOwnedBooks initiated
+2022-10-12 17:24:26.2876 INFO GeOwnedBooks initiated
+2022-10-12 17:24:26.3186 INFO GeOwnedBooks initiated
+2022-10-12 17:24:30.7567 INFO GeOwnedBooks initiated
+2022-10-12 17:24:31.0537 INFO GeOwnedBooks initiated
+2022-10-12 17:24:37.4501 INFO GeOwnedBooks initiated
+2022-10-12 17:24:37.4777 INFO GeOwnedBooks initiated
+2022-10-12 17:24:47.7876 INFO GeOwnedBooks initiated
+2022-10-12 17:24:47.8708 INFO GeOwnedBooks initiated
+2022-10-12 17:24:57.3189 INFO GeOwnedBooks initiated
+2022-10-12 17:24:57.3499 INFO GeOwnedBooks initiated
+2022-10-12 17:25:03.3999 INFO GeOwnedBooks initiated
+2022-10-12 17:25:03.4910 INFO GeOwnedBooks initiated
+2022-10-12 17:25:10.5375 INFO GeOwnedBooks initiated
+2022-10-12 17:25:10.8875 INFO GeOwnedBooks initiated
+2022-10-12 17:25:39.2562 INFO GeOwnedBooks initiated
+2022-10-12 17:25:39.4537 INFO GeOwnedBooks initiated
+2022-10-12 17:25:48.8343 INFO GeOwnedBooks initiated
+2022-10-12 17:25:48.8343 INFO GeOwnedBooks initiated
+2022-10-12 17:26:06.3345 INFO GeOwnedBooks initiated
+2022-10-12 17:26:06.3703 INFO GeOwnedBooks initiated
+2022-10-12 17:26:19.4463 INFO GeOwnedBooks initiated
+2022-10-12 17:26:19.8968 INFO GeOwnedBooks initiated
+2022-10-12 17:26:34.1943 INFO GeOwnedBooks initiated
+2022-10-12 17:26:34.3377 INFO GeOwnedBooks initiated
+2022-10-12 17:26:37.2676 INFO GeOwnedBooks initiated
+2022-10-12 17:26:37.3530 INFO GeOwnedBooks initiated
+2022-10-12 17:26:49.0848 INFO GeOwnedBooks initiated
+2022-10-12 17:26:49.3348 INFO GeOwnedBooks initiated
+2022-10-12 17:26:57.7450 INFO GeOwnedBooks initiated
+2022-10-12 17:26:58.0381 INFO GeOwnedBooks initiated
+2022-10-12 17:27:03.8825 INFO GeOwnedBooks initiated
+2022-10-12 17:27:03.9754 INFO GeOwnedBooks initiated
+2022-10-12 17:27:57.8509 INFO GeOwnedBooks initiated
+2022-10-12 17:27:57.9134 INFO GeOwnedBooks initiated
+2022-10-12 17:28:16.0378 INFO GeOwnedBooks initiated
+2022-10-12 17:28:16.0539 INFO GeOwnedBooks initiated
+2022-10-12 17:36:48.6943 INFO GeOwnedBooks initiated
+2022-10-12 17:37:08.3658 INFO GeOwnedBooks initiated
+2022-10-12 17:38:19.8824 INFO GeOwnedBooks initiated
+2022-10-12 17:39:49.4600 INFO GeOwnedBooks initiated
+2022-10-12 17:39:50.1002 INFO GeOwnedBooks initiated
+2022-10-12 17:40:04.4822 INFO GeOwnedBooks initiated
+2022-10-12 17:40:04.6472 INFO GeOwnedBooks initiated
+2022-10-12 17:40:15.9800 INFO GeOwnedBooks initiated
+2022-10-12 17:40:16.3533 INFO GeOwnedBooks initiated
+2022-10-12 17:40:18.5226 INFO GeOwnedBooks initiated
+2022-10-12 17:40:18.6734 INFO GeOwnedBooks initiated
+2022-10-12 17:40:50.9438 INFO GeOwnedBooks initiated
+2022-10-12 17:40:51.1339 INFO GeOwnedBooks initiated
+2022-10-12 17:40:53.4188 INFO GeOwnedBooks initiated
+2022-10-12 17:40:53.4453 INFO GeOwnedBooks initiated
+2022-10-12 17:41:13.7104 INFO GeOwnedBooks initiated
+2022-10-12 17:41:13.9314 INFO GeOwnedBooks initiated
+2022-10-12 17:41:35.0387 INFO GeOwnedBooks initiated
+2022-10-12 17:41:35.1181 INFO GeOwnedBooks initiated
+2022-10-12 17:41:44.3037 INFO GeOwnedBooks initiated
+2022-10-12 17:41:44.3817 INFO GeOwnedBooks initiated
+2022-10-12 17:41:59.8223 INFO GeOwnedBooks initiated
+2022-10-12 17:41:59.8714 INFO GeOwnedBooks initiated
+2022-10-12 17:42:36.0065 INFO GeOwnedBooks initiated
+2022-10-12 17:42:36.0699 INFO GeOwnedBooks initiated
+2022-10-12 17:42:45.1011 INFO GeOwnedBooks initiated
+2022-10-12 17:42:45.1779 INFO GeOwnedBooks initiated
+2022-10-12 17:42:45.9672 INFO GeOwnedBooks initiated
+2022-10-12 17:42:46.0383 INFO GeOwnedBooks initiated
+2022-10-12 17:44:47.4441 INFO GeOwnedBooks initiated
+2022-10-12 17:48:58.4599 INFO GetUnRentedBooks initiated
+2022-10-12 17:49:38.6973 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:18.9754 INFO RentBook 
+2022-10-12 17:50:19.3815 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:21.5699 INFO GetRentedBooks initiated
+2022-10-12 17:50:25.2255 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:27.9464 INFO RentBook 
+2022-10-12 17:50:28.1786 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:30.9069 INFO RentBook 
+2022-10-12 17:50:31.1792 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:33.7885 INFO RentBook 
+2022-10-12 17:50:34.6056 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:37.1936 INFO RentBook 
+2022-10-12 17:50:37.4208 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:44.1164 INFO RentBook 
+2022-10-12 17:50:44.3511 INFO GetUnRentedBooks initiated
+2022-10-12 17:50:46.0256 INFO GetRentedBooks initiated
+2022-10-12 17:58:35.7747 INFO GetUnRentedBooks initiated
+2022-10-12 17:58:36.2255 INFO GetRentedBooks initiated
+2022-10-12 17:58:50.6844 INFO GetUnRentedBooks initiated
+2022-10-12 17:58:50.7414 INFO GetRentedBooks initiated
+2022-10-12 17:58:53.4490 INFO GetRentedBooks initiated
+2022-10-12 17:58:53.4490 INFO GetUnRentedBooks initiated
+2022-10-12 17:58:55.8666 INFO GetRentedBooks initiated
+2022-10-12 17:58:55.9598 INFO GetUnRentedBooks initiated
+2022-10-12 17:59:01.4439 INFO GetRentedBooks initiated
+2022-10-12 17:59:01.6630 INFO GetUnRentedBooks initiated
+2022-10-12 18:06:44.3382 INFO GetUnRentedBooks initiated
+2022-10-12 18:06:44.8658 INFO GetRentedBooks initiated
+2022-10-12 18:06:54.2588 INFO GetRentedBooks initiated
+2022-10-12 18:06:54.3187 INFO GetUnRentedBooks initiated
+2022-10-12 18:06:59.0686 INFO GetUnRentedBooks initiated
+2022-10-12 18:07:02.6050 INFO GetRentedBooks initiated
+2022-10-12 18:09:15.2895 INFO GetRentedBooks initiated
+2022-10-12 18:14:17.9757 INFO GetUnRentedBooks initiated
+2022-10-12 18:14:19.6324 INFO GetRentedBooks initiated
+2022-10-12 18:15:35.2249 INFO GetUnRentedBooks initiated
+2022-10-12 18:15:36.9037 INFO GetRentedBooks initiated
+2022-10-12 18:15:55.9124 INFO unRentBook 
+2022-10-12 18:15:56.7965 INFO GetRentedBooks initiated
+2022-10-12 18:15:59.6789 INFO unRentBook 
+2022-10-12 18:15:59.9127 INFO GetRentedBooks initiated
+2022-10-12 18:16:02.7406 INFO unRentBook 
+2022-10-12 18:16:02.9756 INFO GetRentedBooks initiated
+2022-10-12 18:16:05.6006 INFO unRentBook 
+2022-10-12 18:16:05.8508 INFO GetRentedBooks initiated
+2022-10-12 18:16:08.3666 INFO unRentBook 
+2022-10-12 18:16:08.6484 INFO GetRentedBooks initiated
+2022-10-12 18:16:11.4232 INFO unRentBook 
+2022-10-12 18:16:11.6532 INFO GetRentedBooks initiated
+2022-10-12 18:16:13.2878 INFO GetUnRentedBooks initiated
+2022-10-12 18:18:00.4910 INFO GetUnRentedBooks initiated
+2022-10-12 18:18:00.6946 INFO GetRentedBooks initiated
+2022-10-12 18:18:03.9920 INFO GetUnRentedBooks initiated
+2022-10-12 18:18:04.0065 INFO GetRentedBooks initiated
+2022-10-12 18:18:13.1006 INFO GetUnRentedBooks initiated
+2022-10-12 18:18:13.1346 INFO GetRentedBooks initiated
+2022-10-12 18:18:23.1935 INFO GetRentedBooks initiated
+2022-10-12 18:18:23.2255 INFO GetUnRentedBooks initiated
+2022-10-12 18:19:12.6954 INFO GetRentedBooks initiated
+2022-10-12 18:19:12.8188 INFO GetUnRentedBooks initiated
+2022-10-12 18:19:24.2570 INFO GetRentedBooks initiated
+2022-10-12 18:19:24.7408 INFO GetUnRentedBooks initiated
+2022-10-12 18:19:32.2873 INFO GetRentedBooks initiated
+2022-10-12 18:19:32.6361 INFO GetUnRentedBooks initiated
+2022-10-12 18:20:26.8818 INFO GetRentedBooks initiated
+2022-10-12 18:20:27.0109 INFO GetUnRentedBooks initiated
+2022-10-12 18:20:36.4910 INFO GetUnRentedBooks initiated
+2022-10-12 18:20:36.5221 INFO GetRentedBooks initiated
+2022-10-12 18:20:46.8994 INFO GetUnRentedBooks initiated
+2022-10-12 18:20:47.0396 INFO GetRentedBooks initiated
+2022-10-12 18:21:02.9170 INFO GetRentedBooks initiated
+2022-10-12 18:21:03.5423 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:06.6424 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:06.6704 INFO GetRentedBooks initiated
+2022-10-12 18:21:16.4284 INFO GetRentedBooks initiated
+2022-10-12 18:21:16.7139 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:18.4780 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:18.6003 INFO GetRentedBooks initiated
+2022-10-12 18:21:27.3049 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:27.6004 INFO GetRentedBooks initiated
+2022-10-12 18:21:41.2412 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:41.3044 INFO GetRentedBooks initiated
+2022-10-12 18:21:48.0380 INFO RentBook 
+2022-10-12 18:21:48.2880 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:50.7879 INFO RentBook 
+2022-10-12 18:21:51.0404 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:53.6629 INFO RentBook 
+2022-10-12 18:21:53.8988 INFO GetUnRentedBooks initiated
+2022-10-12 18:21:56.7746 INFO RentBook 
+2022-10-12 18:21:57.0220 INFO GetUnRentedBooks initiated
+2022-10-12 18:22:00.3503 INFO RentBook 
+2022-10-12 18:22:00.5851 INFO GetUnRentedBooks initiated
+2022-10-12 18:22:03.1193 INFO RentBook 
+2022-10-12 18:22:03.3810 INFO GetUnRentedBooks initiated
+2022-10-12 18:22:05.1332 INFO GetRentedBooks initiated
+2022-10-12 18:24:35.2275 INFO GetRentedBooks initiated
+2022-10-12 18:24:35.2725 INFO GetRentedBooks initiated
+2022-10-12 18:24:40.3816 INFO GetRentedBooks initiated
+2022-10-12 18:24:40.3970 INFO GetRentedBooks initiated
+2022-10-12 18:24:45.6786 INFO GetUnRentedBooks initiated
+2022-10-12 18:24:47.5375 INFO GetRentedBooks initiated
+2022-10-12 18:24:52.4596 INFO unRentBook 
+2022-10-12 18:24:52.6972 INFO GetRentedBooks initiated
+2022-10-12 18:24:55.1657 INFO unRentBook 
+2022-10-12 18:24:55.4359 INFO GetRentedBooks initiated
+2022-10-12 18:24:58.0704 INFO unRentBook 
+2022-10-12 18:24:58.3099 INFO GetRentedBooks initiated
+2022-10-12 18:25:00.7745 INFO unRentBook 
+2022-10-12 18:25:00.9958 INFO GetRentedBooks initiated
+2022-10-12 18:25:03.3662 INFO unRentBook 
+2022-10-12 18:25:03.6473 INFO GetRentedBooks initiated
+2022-10-12 18:25:06.3346 INFO unRentBook 
+2022-10-12 18:25:06.5699 INFO GetRentedBooks initiated
+2022-10-12 18:25:33.6154 INFO GetUnRentedBooks initiated
+2022-10-12 18:26:13.4449 INFO GetRentedBooks initiated
+2022-10-12 18:26:26.1314 INFO GetRentedBooks initiated
+2022-10-12 18:26:27.1157 INFO GetRentedBooks initiated
+2022-10-12 18:26:35.6398 INFO GetRentedBooks initiated
+2022-10-12 18:26:41.8886 INFO GeOwnedBooks initiated
+2022-10-12 18:27:50.2884 INFO GetRentedBooks initiated
+2022-10-12 18:27:50.3053 INFO GeOwnedBooks initiated
+2022-10-12 18:28:21.9294 INFO GetRentedBooks initiated
+2022-10-12 18:28:22.1316 INFO GeOwnedBooks initiated
+2022-10-12 18:28:29.4043 INFO GetRentedBooks initiated
+2022-10-12 18:28:29.4311 INFO GeOwnedBooks initiated
+2022-10-12 18:29:31.2559 INFO GetRentedBooks initiated
+2022-10-12 18:29:31.4322 INFO GeOwnedBooks initiated
+2022-10-12 18:29:39.3191 INFO GeOwnedBooks initiated
+2022-10-12 18:29:53.7905 INFO GeOwnedBooks initiated
+2022-10-12 18:30:22.1515 INFO GeOwnedBooks initiated
+2022-10-12 18:32:03.6325 INFO GeOwnedBooks initiated
+2022-10-12 18:32:12.5065 INFO GetUnRentedBooks initiated
+2022-10-12 18:32:31.0109 INFO GeOwnedBooks initiated
+2022-10-12 18:32:52.0566 INFO GeOwnedBooks initiated
+2022-10-12 18:34:19.4788 INFO GeOwnedBooks initiated
+2022-10-12 18:34:20.3067 INFO GeOwnedBooks initiated
+2022-10-12 18:34:39.4285 INFO GeOwnedBooks initiated
+2022-10-12 18:34:59.7876 INFO GeOwnedBooks initiated
+2022-10-12 18:35:02.0437 INFO GeOwnedBooks initiated
+2022-10-12 18:35:37.5846 INFO GeOwnedBooks initiated
+2022-10-12 18:35:40.9599 INFO GeOwnedBooks initiated
+2022-10-12 18:35:44.5573 INFO GeOwnedBooks initiated
+2022-10-12 18:35:46.2805 INFO GeOwnedBooks initiated
+2022-10-12 18:35:54.8035 INFO GeOwnedBooks initiated
+2022-10-12 18:36:06.3350 INFO GeOwnedBooks initiated
+2022-10-12 18:36:15.8697 INFO GeOwnedBooks initiated
+2022-10-12 18:36:18.8122 INFO GeOwnedBooks initiated
+2022-10-12 18:36:22.7875 INFO GeOwnedBooks initiated
+2022-10-12 18:36:25.6154 INFO GeOwnedBooks initiated
+2022-10-12 18:36:40.5450 INFO GeOwnedBooks initiated
+2022-10-12 18:36:45.1211 INFO GeOwnedBooks initiated
+2022-10-12 18:36:56.0222 INFO GetRentedBooks initiated
+2022-10-12 18:37:00.1475 INFO GetUnRentedBooks initiated
+2022-10-12 18:37:19.1784 INFO GetUnRentedBooks initiated
+2022-10-12 18:37:28.8680 INFO GetUnRentedBooks initiated
+2022-10-12 18:37:35.0387 INFO GetUnRentedBooks initiated
+2022-10-12 18:37:45.2419 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:02.8811 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:06.5221 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:09.8547 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:21.4452 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:23.5161 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:30.1035 INFO GetUnRentedBooks initiated
+2022-10-12 18:38:47.4799 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:08.3208 INFO GetRentedBooks initiated
+2022-10-12 18:39:10.7754 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:13.5287 INFO RentBook 
+2022-10-12 18:39:13.9474 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:16.3344 INFO RentBook 
+2022-10-12 18:39:16.5887 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:18.9910 INFO RentBook 
+2022-10-12 18:39:19.2736 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:21.6388 INFO RentBook 
+2022-10-12 18:39:21.9130 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:24.2767 INFO RentBook 
+2022-10-12 18:39:24.5859 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:27.4280 INFO RentBook 
+2022-10-12 18:39:27.6782 INFO GetUnRentedBooks initiated
+2022-10-12 18:39:29.7900 INFO GetRentedBooks initiated
+2022-10-12 18:39:44.0758 INFO GetRentedBooks initiated
+2022-10-12 18:39:56.6312 INFO GetRentedBooks initiated
+2022-10-12 18:40:08.3817 INFO GetRentedBooks initiated
+2022-10-12 18:40:12.6826 INFO GetRentedBooks initiated
+2022-10-12 18:40:16.5223 INFO GetRentedBooks initiated
+2022-10-12 18:40:25.2408 INFO GetRentedBooks initiated
+2022-10-12 18:40:50.1158 INFO GeOwnedBooks initiated
+2022-10-12 18:40:57.6370 INFO GeOwnedBooks initiated
+2022-10-12 18:41:09.9283 INFO GeOwnedBooks initiated
+2022-10-12 18:41:22.8439 INFO GeOwnedBooks initiated
+2022-10-12 18:41:30.9461 INFO Create Book initiated
+2022-10-12 18:41:34.9906 INFO GeOwnedBooks initiated
+2022-10-12 18:42:02.9598 INFO GeOwnedBooks initiated
+2022-10-12 18:42:15.7160 INFO GetRentedBooks initiated
+2022-10-12 18:42:18.6938 INFO unRentBook 
+2022-10-12 18:42:19.1733 INFO GetRentedBooks initiated
+2022-10-12 18:42:21.6485 INFO unRentBook 
+2022-10-12 18:42:21.9299 INFO GetRentedBooks initiated
+2022-10-12 18:42:24.3725 INFO unRentBook 
+2022-10-12 18:42:24.6785 INFO GetRentedBooks initiated
+2022-10-12 18:42:27.0704 INFO unRentBook 
+2022-10-12 18:42:27.3507 INFO GetRentedBooks initiated
+2022-10-12 18:42:29.7017 INFO unRentBook 
+2022-10-12 18:42:30.0294 INFO GetRentedBooks initiated
+2022-10-12 18:42:32.5728 INFO unRentBook 
+2022-10-12 18:42:32.8545 INFO GetRentedBooks initiated
+2022-10-12 18:42:42.5372 INFO GeOwnedBooks initiated
+2022-10-12 18:44:43.6414 INFO GeOwnedBooks initiated
+2022-10-12 18:45:02.6468 INFO GeOwnedBooks initiated
+2022-10-12 18:45:18.6939 INFO GeOwnedBooks initiated
+2022-10-12 18:45:28.3664 INFO GeOwnedBooks initiated
+2022-10-12 18:45:34.5383 INFO GeOwnedBooks initiated
+2022-10-12 18:45:42.6155 INFO GeOwnedBooks initiated
+2022-10-12 18:45:54.0261 INFO GetRentedBooks initiated
+2022-10-12 18:45:55.7278 INFO GetUnRentedBooks initiated
+2022-10-12 18:45:58.7799 INFO RentBook 
+2022-10-12 18:45:59.0324 INFO GetUnRentedBooks initiated
+2022-10-12 18:46:09.3695 INFO GeOwnedBooks initiated
+2022-10-12 18:48:19.6494 WARN Invalid password for user.
+2022-10-12 18:48:19.6494 WARN User failed to provide the correct password.
+2022-10-12 18:54:38.0221 INFO GeOwnedBooks initiated
+2022-10-12 18:54:44.0846 INFO GeOwnedBooks initiated
+2022-10-12 18:54:45.3679 INFO GeOwnedBooks initiated
+2022-10-12 18:55:04.7161 INFO GeOwnedBooks initiated
+2022-10-12 18:55:19.4509 INFO GeOwnedBooks initiated
+2022-10-12 18:55:57.0849 INFO GeOwnedBooks initiated
+2022-10-12 18:56:01.4913 INFO GeOwnedBooks initiated
+2022-10-12 18:57:13.8812 INFO GeOwnedBooks initiated
+2022-10-12 18:57:15.3670 INFO GeOwnedBooks initiated
+2022-10-12 18:58:24.6469 INFO GeOwnedBooks initiated
+2022-10-12 18:58:27.1820 INFO GeOwnedBooks initiated
+2022-10-12 18:58:40.0689 INFO GeOwnedBooks initiated
+2022-10-12 19:01:39.8939 INFO GeOwnedBooks initiated
+2022-10-12 19:03:34.8981 INFO GeOwnedBooks initiated

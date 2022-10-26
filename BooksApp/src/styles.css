@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Helvetica, arial,"Helvetica Neue", sans-serif; }
+
+.mat-card-header-text{
+    width: 100% !important;
+  }

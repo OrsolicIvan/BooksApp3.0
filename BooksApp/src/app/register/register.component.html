@@ -1,0 +1,33 @@
+<div class="main-content" style="margin-top: 100px;">
+    <div class="container-fluid">
+      <div class="card">
+          <div class="card-header card-header-danger">
+              <h4 class="card-title">Kreiranje korisničkog računa</h4>
+          </div>
+          <div class="card-body">
+                  <div class="row">
+                    
+                    <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()" class="container" novalidate autocomplete="off" #form="ngForm">
+                            
+                        <app-text-input [formControl]="registerForm.controls['username']" 
+                              [label]='"Korisničko ime"'></app-text-input>
+                          <app-text-input [formControl]="registerForm.controls['email']" 
+                              [label]='"E-mail"' [type]='"email"'></app-text-input>
+                        <app-text-input [formControl]="registerForm.controls['password']"
+                              [label]='"Lozinka"' [type]='"password"'></app-text-input>
+                        <app-text-input [formControl]="registerForm.controls['confirmPassword']" 
+                              [label]='" Potvrdi lozinku"' [type]='"password"'></app-text-input>
+                         
+                        <br>
+                        <div class="form-group text-center">
+                            <button class="btn btn-dark btn-lg btn-block" type="submit" [disabled]="form.invalid">Registriraj se</button>
+                            <button class="btn btn-danger btn-lg btn-block" (click)="cancel()">Odustani</button>
+                        </div>
+                    </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  

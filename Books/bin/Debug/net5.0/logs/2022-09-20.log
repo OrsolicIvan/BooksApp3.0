@@ -1,0 +1,186 @@
+2022-09-20 09:53:43.8368 INFO Create Book initiated
+2022-09-20 09:53:47.3664 INFO GeOwnedBooks initiated
+2022-09-20 09:53:56.3098 INFO GeOwnedBooks initiated
+2022-09-20 09:54:08.0867 INFO UpdateBook initiated
+2022-09-20 09:54:09.7724 INFO GeOwnedBooks initiated
+2022-09-20 09:54:13.9767 INFO Delete book initiated
+2022-09-20 09:54:14.0695 ERROR Failed executing DbCommand (34ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-20 09:54:14.2252 INFO GeOwnedBooks initiated
+2022-09-20 09:54:14.2656 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:741570ae-affa-4a63-b6d7-8c203d9c050d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-09-20 09:54:14.4040 ERROR Exception Caught
+2022-09-20 09:54:28.5909 INFO Delete book initiated
+2022-09-20 09:54:28.6206 ERROR Failed executing DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-20 09:54:28.6206 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:741570ae-affa-4a63-b6d7-8c203d9c050d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-09-20 09:54:28.7148 ERROR Exception Caught
+2022-09-20 09:54:29.4766 INFO GeOwnedBooks initiated
+2022-09-20 09:54:44.5692 INFO Delete book initiated
+2022-09-20 09:54:44.5842 ERROR Failed executing DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-20 09:54:44.6002 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:741570ae-affa-4a63-b6d7-8c203d9c050d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-09-20 09:54:44.6890 ERROR Exception Caught
+2022-09-20 09:54:45.3507 INFO GeOwnedBooks initiated
+2022-09-20 09:55:25.7559 INFO Create Book initiated
+2022-09-20 09:55:29.3032 INFO GeOwnedBooks initiated
+2022-09-20 09:55:33.4507 INFO Delete book initiated
+2022-09-20 09:55:33.8028 INFO GeOwnedBooks initiated
+2022-09-20 09:57:02.1483 INFO Create Book initiated
+2022-09-20 09:57:05.0691 INFO GeOwnedBooks initiated
+2022-09-20 09:57:16.8195 INFO GeOwnedBooks initiated
+2022-09-20 09:57:20.8817 INFO Delete book initiated
+2022-09-20 09:57:20.8979 ERROR Failed executing DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-20 09:57:20.8979 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:741570ae-affa-4a63-b6d7-8c203d9c050d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-09-20 09:57:20.9958 ERROR Exception Caught
+2022-09-20 09:57:21.0860 INFO GeOwnedBooks initiated
+2022-09-20 09:57:38.1956 INFO Create Book initiated
+2022-09-20 09:57:41.2251 INFO GeOwnedBooks initiated
+2022-09-20 09:57:45.0431 INFO Delete book initiated
+2022-09-20 09:57:45.2503 INFO GeOwnedBooks initiated
+2022-09-20 09:58:03.5685 INFO Create Book initiated
+2022-09-20 09:58:06.2102 INFO GeOwnedBooks initiated
+2022-09-20 09:58:10.3667 INFO Delete book initiated
+2022-09-20 09:58:10.8847 INFO GeOwnedBooks initiated
+2022-09-20 09:58:27.4122 INFO Create Book initiated
+2022-09-20 09:58:30.4995 INFO GeOwnedBooks initiated
+2022-09-20 09:59:00.3810 INFO Create Book initiated
+2022-09-20 09:59:03.6407 INFO GeOwnedBooks initiated
+2022-09-20 09:59:13.5421 INFO Delete book initiated
+2022-09-20 09:59:14.7717 INFO GeOwnedBooks initiated
+2022-09-20 09:59:18.3224 INFO Delete book initiated
+2022-09-20 09:59:18.5216 INFO GeOwnedBooks initiated
+2022-09-20 10:00:27.6006 INFO GetUnRentedBooks initiated
+2022-09-20 10:01:23.0068 INFO RentBook 
+2022-09-20 10:01:23.3973 INFO GetUnRentedBooks initiated
+2022-09-20 10:01:25.8367 INFO GetRentedBooks initiated
+2022-09-20 10:01:29.6808 INFO unRentBook 
+2022-09-20 10:01:29.9082 INFO GetRentedBooks initiated
+2022-09-20 10:56:06.5746 INFO GetUnRentedBooks initiated
+2022-09-20 10:56:39.5534 INFO GetUnRentedBooks initiated
+2022-09-20 10:56:44.3974 INFO RentBook 
+2022-09-20 10:56:45.4775 INFO GetUnRentedBooks initiated
+2022-09-20 10:56:47.7256 INFO GetRentedBooks initiated
+2022-09-20 10:56:54.5222 INFO unRentBook 
+2022-09-20 10:56:54.9131 INFO GetRentedBooks initiated
+2022-09-20 10:58:11.8831 INFO GeOwnedBooks initiated
+2022-09-20 11:00:29.1821 INFO Create Book initiated
+2022-09-20 11:00:32.0215 INFO GeOwnedBooks initiated
+2022-09-20 11:11:37.9131 INFO GeOwnedBooks initiated
+2022-09-20 11:11:57.0587 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-09-20 11:11:57.1849 ERROR An unhandled exception has occurred while executing the request.
+2022-09-20 11:12:25.1641 INFO GeOwnedBooks initiated
+2022-09-20 11:12:34.5850 INFO GeOwnedBooks initiated
+2022-09-20 11:17:08.8975 INFO GeOwnedBooks initiated
+2022-09-20 11:51:25.2593 ERROR An unhandled exception has occurred while executing the request.
+2022-09-20 11:55:18.7405 INFO GeOwnedBooks initiated

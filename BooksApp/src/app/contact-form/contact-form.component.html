@@ -1,0 +1,30 @@
+<div class="main-content">
+<div class="container">
+
+        <div class="card-header card-header-danger">
+    <h2 class="text-center mb-5">Kontaktirajte admina</h2>
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+    <form [formGroup]="FormData" (ngSubmit)=" FormData.valid && onSubmit(FormData.value)" method="POST" encType="multipart/form-data"><div class="form-group">
+    </div>
+    
+
+    <app-text-input [formControl]="FormData.controls['Fullname']" [label]='"Ime i prezime"'></app-text-input>
+
+    <app-text-input [formControl]="FormData.controls['Email']" [label]='"Email"'></app-text-input>                   
+    <small id="emailHelp" class="form-text text-muted">Nećemo dijeliti vaš email.</small>
+
+    <app-text-input [formControl]="FormData.controls['Comment']" [label]='"Komentar"'></app-text-input> 
+  
+      
+    <div class="gumb">
+    <button class="btn btn-dark " type="submit" [disabled]="FormData.invalid">Pošalji</button>
+    </div>
+   
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  

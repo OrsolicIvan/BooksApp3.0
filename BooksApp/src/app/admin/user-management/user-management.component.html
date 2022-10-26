@@ -1,0 +1,48 @@
+<div class="main-content" style="margin-top:20px ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Prikaz korisnika</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Ime korisnika
+                                    </th>
+                                    <th>
+                                        Trenutna uloga
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                    <th>
+
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let user of users">
+                                      <td >{{user.id}}</td>
+                                      <td >{{user.userName}}</td>
+                                      <td >{{user.roles}}</td>
+                                      <td ><button (click)="openRolesModal(user)" class="btn btn-info">Uredi ulogu</button></td>
+                                      <td><button mat-raised-button type="button" matTooltip="Ukloni korisnika" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                        <mat-icon color="warn" (click)="deleteUser(user.userName)">close</mat-icon>
+                                    </button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <br><br>

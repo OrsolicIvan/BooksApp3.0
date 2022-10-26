@@ -1,0 +1,31 @@
+<div class="main-content" style="margin-top:100px;" >
+  <div class="container"  >
+      <div class="row" style="justify-content:center">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Objavi knjigu</h4>
+                      <p class="card-category">Popuni sve podatke</p>
+                  </div>
+                  <div class="card-body">
+                    <form [formGroup]="uploadForm" class="container" novalidate autocomplete="off" #form="ngForm">
+                            
+                      <app-text-input [formControl]="uploadForm.controls['bookTitle']" 
+                            [label]='"Naziv knjige"'></app-text-input>
+
+                      <app-text-input (keypress)="numberOnly($event)" [formControl]="uploadForm.controls['bookYear']" 
+                            [label]='"Godina knjige"'></app-text-input>
+
+                      <br>
+                      <div class="form-group text-center">
+                          <button class="btn btn-dark btn-lg btn-block" type="submit" [disabled]="form.invalid" (click)="postBook()">DODAJ</button>
+                      </div> 
+                  </form> 
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+  </div>
+</div>
+ 

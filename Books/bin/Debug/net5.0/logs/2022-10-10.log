@@ -1,0 +1,247 @@
+2022-10-10 12:18:42.9121 INFO GeOwnedBooks initiated
+2022-10-10 12:18:55.7715 INFO UpdateBook initiated
+2022-10-10 12:18:57.7729 INFO GeOwnedBooks initiated
+2022-10-10 12:19:08.0371 INFO GeOwnedBooks initiated
+2022-10-10 12:19:24.1837 INFO Create Book initiated
+2022-10-10 12:19:27.0845 INFO GeOwnedBooks initiated
+2022-10-10 13:15:11.8963 INFO GeOwnedBooks initiated
+2022-10-10 13:16:04.4221 INFO Create Book initiated
+2022-10-10 13:16:08.1619 INFO GeOwnedBooks initiated
+2022-10-10 13:18:13.7119 INFO GeOwnedBooks initiated
+2022-10-10 13:18:54.1640 INFO GetRentedBooks initiated
+2022-10-10 13:19:13.7433 INFO GetRentedBooks initiated
+2022-10-10 13:19:17.2587 INFO GetRentedBooks initiated
+2022-10-10 13:19:24.9586 INFO GetRentedBooks initiated
+2022-10-10 13:19:40.2249 INFO GeOwnedBooks initiated
+2022-10-10 13:19:55.8338 INFO GetAllBooks initiated
+2022-10-10 13:20:10.3549 INFO Returned all users from database
+2022-10-10 13:20:22.6315 INFO GetRentedBooks initiated
+2022-10-10 13:20:26.1175 INFO GetUnRentedBooks initiated
+2022-10-10 13:20:37.5918 INFO GetRentedBooks initiated
+2022-10-10 13:21:16.1156 INFO GeOwnedBooks initiated
+2022-10-10 13:25:35.3829 INFO GeOwnedBooks initiated
+2022-10-10 13:25:35.6618 INFO GeOwnedBooks initiated
+2022-10-10 13:26:00.6305 INFO GeOwnedBooks initiated
+2022-10-10 13:28:53.9746 INFO GeOwnedBooks initiated
+2022-10-10 13:28:54.3251 INFO GeOwnedBooks initiated
+2022-10-10 13:29:19.5526 INFO GeOwnedBooks initiated
+2022-10-10 13:32:42.5068 INFO GeOwnedBooks initiated
+2022-10-10 13:32:42.8847 INFO GeOwnedBooks initiated
+2022-10-10 13:32:54.5837 INFO GeOwnedBooks initiated
+2022-10-10 13:33:11.8966 INFO GeOwnedBooks initiated
+2022-10-10 13:33:12.3686 INFO GeOwnedBooks initiated
+2022-10-10 13:33:40.6619 INFO GeOwnedBooks initiated
+2022-10-10 13:33:41.0694 INFO GeOwnedBooks initiated
+2022-10-10 13:33:45.3847 INFO GeOwnedBooks initiated
+2022-10-10 13:33:46.0431 INFO GeOwnedBooks initiated
+2022-10-10 13:34:09.5376 INFO GeOwnedBooks initiated
+2022-10-10 13:34:09.6305 INFO GeOwnedBooks initiated
+2022-10-10 13:35:14.4612 INFO GeOwnedBooks initiated
+2022-10-10 13:35:14.6824 INFO GeOwnedBooks initiated
+2022-10-10 13:35:23.6153 INFO GeOwnedBooks initiated
+2022-10-10 13:39:26.0714 INFO GeOwnedBooks initiated
+2022-10-10 13:39:37.1305 INFO GeOwnedBooks initiated
+2022-10-10 13:40:45.8655 INFO GeOwnedBooks initiated
+2022-10-10 13:40:46.1153 INFO GeOwnedBooks initiated
+2022-10-10 13:42:41.6931 INFO GeOwnedBooks initiated
+2022-10-10 13:42:41.8182 INFO GeOwnedBooks initiated
+2022-10-10 13:44:36.3200 INFO GeOwnedBooks initiated
+2022-10-10 13:44:36.7716 INFO GeOwnedBooks initiated
+2022-10-10 13:45:34.3597 INFO GeOwnedBooks initiated
+2022-10-10 13:45:34.8043 INFO GeOwnedBooks initiated
+2022-10-10 13:46:03.2089 INFO GeOwnedBooks initiated
+2022-10-10 13:46:03.4901 INFO GeOwnedBooks initiated
+2022-10-10 13:46:07.1622 INFO GeOwnedBooks initiated
+2022-10-10 13:46:07.2872 INFO GeOwnedBooks initiated
+2022-10-10 13:46:18.1016 INFO GeOwnedBooks initiated
+2022-10-10 13:46:18.4594 INFO GeOwnedBooks initiated
+2022-10-10 13:46:36.5701 INFO GeOwnedBooks initiated
+2022-10-10 13:46:45.4287 INFO GeOwnedBooks initiated
+2022-10-10 13:46:55.7873 INFO GeOwnedBooks initiated
+2022-10-10 13:46:56.1464 INFO GeOwnedBooks initiated
+2022-10-10 13:53:09.0997 INFO GeOwnedBooks initiated
+2022-10-10 13:53:09.6158 INFO GeOwnedBooks initiated
+2022-10-10 14:43:18.3350 INFO GeOwnedBooks initiated
+2022-10-10 14:43:51.7262 INFO GeOwnedBooks initiated
+2022-10-10 14:43:52.0068 INFO GeOwnedBooks initiated
+2022-10-10 14:44:28.7111 INFO GeOwnedBooks initiated
+2022-10-10 14:44:28.7561 INFO GeOwnedBooks initiated
+2022-10-10 14:44:56.9130 INFO GeOwnedBooks initiated
+2022-10-10 14:44:56.9437 INFO GeOwnedBooks initiated
+2022-10-10 14:44:58.4750 INFO GeOwnedBooks initiated
+2022-10-10 14:44:58.5742 INFO GeOwnedBooks initiated
+2022-10-10 14:45:10.5055 INFO GeOwnedBooks initiated
+2022-10-10 14:45:10.7591 INFO GeOwnedBooks initiated
+2022-10-10 14:46:07.7404 INFO GeOwnedBooks initiated
+2022-10-10 14:46:08.0843 INFO GeOwnedBooks initiated
+2022-10-10 14:46:13.4034 INFO Delete book initiated
+2022-10-10 14:46:13.9288 INFO GeOwnedBooks initiated
+2022-10-10 14:46:14.0391 ERROR Failed executing DbCommand (419ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Books]
+WHERE [BookId] = @p0;
+SELECT @@ROWCOUNT;
+2022-10-10 14:46:14.5036 ERROR An exception occurred in the database while saving changes for context type 'Books.Models.DataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Books_Authors_Books_BookId". The conflict occurred in database "AuthorDB", table "dbo.Books_Authors", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:fa472dbc-d6ca-4edf-bdfb-b969792ad72f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-10-10 14:46:14.9960 ERROR Exception Caught
+2022-10-10 14:47:47.7873 INFO GetAllBooks initiated
+2022-10-10 14:48:01.8983 INFO GeOwnedBooks initiated
+2022-10-10 14:49:31.8681 INFO GeOwnedBooks initiated
+2022-10-10 14:49:54.0403 INFO GeOwnedBooks initiated
+2022-10-10 14:50:31.5135 INFO Create Book initiated
+2022-10-10 14:50:34.1471 INFO GeOwnedBooks initiated
+2022-10-10 14:51:16.2117 INFO GeOwnedBooks initiated
+2022-10-10 14:55:21.9117 INFO GeOwnedBooks initiated
+2022-10-10 14:55:23.7250 INFO GeOwnedBooks initiated
+2022-10-10 14:55:35.4771 INFO GeOwnedBooks initiated
+2022-10-10 14:55:36.0531 INFO GeOwnedBooks initiated
+2022-10-10 14:55:41.0063 INFO GeOwnedBooks initiated
+2022-10-10 14:55:42.4748 INFO GeOwnedBooks initiated
+2022-10-10 14:55:45.6462 INFO GeOwnedBooks initiated
+2022-10-10 14:55:46.5524 INFO GeOwnedBooks initiated
+2022-10-10 14:56:32.6658 INFO GeOwnedBooks initiated
+2022-10-10 14:56:32.8834 INFO GeOwnedBooks initiated
+2022-10-10 15:04:08.4902 INFO GeOwnedBooks initiated
+2022-10-10 15:04:08.9901 INFO GeOwnedBooks initiated
+2022-10-10 15:04:22.6779 INFO GeOwnedBooks initiated
+2022-10-10 15:04:22.8516 INFO GeOwnedBooks initiated
+2022-10-10 15:04:25.9943 INFO GeOwnedBooks initiated
+2022-10-10 15:04:26.6842 INFO GeOwnedBooks initiated
+2022-10-10 15:04:33.6983 INFO GeOwnedBooks initiated
+2022-10-10 15:04:34.1778 INFO GeOwnedBooks initiated
+2022-10-10 15:04:41.2877 INFO GeOwnedBooks initiated
+2022-10-10 15:04:41.6685 INFO GeOwnedBooks initiated
+2022-10-10 15:04:42.5893 INFO GeOwnedBooks initiated
+2022-10-10 15:04:43.5281 INFO GeOwnedBooks initiated
+2022-10-10 15:04:44.8194 INFO GeOwnedBooks initiated
+2022-10-10 15:04:45.6063 INFO GeOwnedBooks initiated
+2022-10-10 15:04:59.7875 INFO GeOwnedBooks initiated
+2022-10-10 15:05:00.3057 INFO GeOwnedBooks initiated
+2022-10-10 15:06:48.9432 INFO GeOwnedBooks initiated
+2022-10-10 15:06:49.2908 INFO GeOwnedBooks initiated
+2022-10-10 15:06:50.4310 INFO GeOwnedBooks initiated
+2022-10-10 15:06:51.2655 INFO GeOwnedBooks initiated
+2022-10-10 15:06:56.0220 INFO GeOwnedBooks initiated
+2022-10-10 15:06:57.2888 INFO GeOwnedBooks initiated
+2022-10-10 15:06:59.7871 INFO GeOwnedBooks initiated
+2022-10-10 15:07:00.5141 INFO GeOwnedBooks initiated
+2022-10-10 15:07:02.4754 INFO GeOwnedBooks initiated
+2022-10-10 15:07:02.9018 INFO GeOwnedBooks initiated
+2022-10-10 15:07:26.7572 INFO GeOwnedBooks initiated
+2022-10-10 15:07:27.3345 INFO GeOwnedBooks initiated
+2022-10-10 15:07:29.1160 INFO GeOwnedBooks initiated
+2022-10-10 15:07:29.9443 INFO GeOwnedBooks initiated
+2022-10-10 15:08:02.2248 INFO GeOwnedBooks initiated
+2022-10-10 15:08:02.5387 INFO GeOwnedBooks initiated
+2022-10-10 15:08:12.0372 INFO GeOwnedBooks initiated
+2022-10-10 15:08:12.0861 INFO GeOwnedBooks initiated
+2022-10-10 15:08:18.5219 INFO GeOwnedBooks initiated
+2022-10-10 15:08:41.7878 INFO GeOwnedBooks initiated
+2022-10-10 15:08:42.2245 INFO GeOwnedBooks initiated
+2022-10-10 15:08:58.4607 INFO GeOwnedBooks initiated
+2022-10-10 15:08:58.6829 INFO GeOwnedBooks initiated
+2022-10-10 15:13:25.4590 INFO GeOwnedBooks initiated
+2022-10-10 15:13:25.9765 INFO GeOwnedBooks initiated
+2022-10-10 15:13:34.2261 INFO GeOwnedBooks initiated
+2022-10-10 15:13:34.5857 INFO GeOwnedBooks initiated
+2022-10-10 15:14:06.6618 INFO GeOwnedBooks initiated
+2022-10-10 15:14:06.6618 INFO GeOwnedBooks initiated
+2022-10-10 15:14:34.2428 INFO GeOwnedBooks initiated
+2022-10-10 15:14:34.5753 INFO GeOwnedBooks initiated
+2022-10-10 15:14:37.8832 INFO GeOwnedBooks initiated
+2022-10-10 15:14:38.3592 INFO GeOwnedBooks initiated
+2022-10-10 15:14:46.8343 INFO GeOwnedBooks initiated
+2022-10-10 15:14:47.6320 INFO GeOwnedBooks initiated
+2022-10-10 15:15:06.8496 INFO GeOwnedBooks initiated
+2022-10-10 15:15:06.9906 INFO GeOwnedBooks initiated
+2022-10-10 15:25:49.4436 INFO GeOwnedBooks initiated
+2022-10-10 15:26:44.8339 INFO GeOwnedBooks initiated
+2022-10-10 15:26:45.5842 INFO GeOwnedBooks initiated
+2022-10-10 15:29:05.0533 INFO GeOwnedBooks initiated
+2022-10-10 15:29:05.1937 INFO GeOwnedBooks initiated
+2022-10-10 15:30:02.9289 INFO GeOwnedBooks initiated
+2022-10-10 15:30:03.1510 INFO GeOwnedBooks initiated
+2022-10-10 15:31:32.6311 INFO GeOwnedBooks initiated
+2022-10-10 15:31:33.3027 INFO GeOwnedBooks initiated
+2022-10-10 15:31:34.1306 INFO GeOwnedBooks initiated
+2022-10-10 15:31:34.7086 INFO GeOwnedBooks initiated
+2022-10-10 15:31:43.4743 INFO GeOwnedBooks initiated
+2022-10-10 15:31:43.4743 INFO GeOwnedBooks initiated
+2022-10-10 15:31:59.5067 INFO GeOwnedBooks initiated
+2022-10-10 15:31:59.8872 INFO GeOwnedBooks initiated
+2022-10-10 15:32:17.3239 INFO UpdateBook initiated
+2022-10-10 15:32:19.4901 INFO GeOwnedBooks initiated
+2022-10-10 15:32:43.5235 INFO GeOwnedBooks initiated
+2022-10-10 15:35:04.3027 INFO GeOwnedBooks initiated
+2022-10-10 15:35:04.6794 INFO GeOwnedBooks initiated
+2022-10-10 15:35:59.6657 INFO GeOwnedBooks initiated
+2022-10-10 15:35:59.8679 INFO GeOwnedBooks initiated
+2022-10-10 15:36:05.7447 INFO GeOwnedBooks initiated
+2022-10-10 15:36:06.4907 INFO GeOwnedBooks initiated
+2022-10-10 15:36:24.2881 INFO GeOwnedBooks initiated
+2022-10-10 15:36:24.8190 INFO GeOwnedBooks initiated
+2022-10-10 15:36:37.8085 INFO GeOwnedBooks initiated
+2022-10-10 15:36:38.1005 INFO GeOwnedBooks initiated
+2022-10-10 15:36:44.8343 INFO GeOwnedBooks initiated
+2022-10-10 15:36:45.2563 INFO GeOwnedBooks initiated
+2022-10-10 15:37:08.7272 INFO GeOwnedBooks initiated
+2022-10-10 15:37:09.0903 INFO GeOwnedBooks initiated
+2022-10-10 15:55:31.7100 INFO GeOwnedBooks initiated
+2022-10-10 15:55:32.4281 INFO GeOwnedBooks initiated
+2022-10-10 15:56:03.3040 INFO GeOwnedBooks initiated
+2022-10-10 15:56:51.0236 INFO GeOwnedBooks initiated
+2022-10-10 15:56:51.9302 INFO GeOwnedBooks initiated
+2022-10-10 15:57:09.9282 INFO GeOwnedBooks initiated
+2022-10-10 15:57:10.0390 INFO GeOwnedBooks initiated
+2022-10-10 15:57:22.6156 INFO Create Book initiated
+2022-10-10 15:57:25.2398 INFO GeOwnedBooks initiated
+2022-10-10 15:57:43.3216 INFO GeOwnedBooks initiated
+2022-10-10 15:58:03.0220 INFO GeOwnedBooks initiated
+2022-10-10 15:58:03.7089 INFO GeOwnedBooks initiated
+2022-10-10 15:58:15.0216 INFO GeOwnedBooks initiated
+2022-10-10 15:58:15.6173 INFO GeOwnedBooks initiated
+2022-10-10 15:58:21.8347 INFO GeOwnedBooks initiated
+2022-10-10 15:58:21.8347 INFO GeOwnedBooks initiated
+2022-10-10 16:00:18.2110 INFO GeOwnedBooks initiated
+2022-10-10 16:00:18.5995 INFO GeOwnedBooks initiated
+2022-10-10 16:00:36.2872 INFO GeOwnedBooks initiated
+2022-10-10 16:00:36.7230 INFO GeOwnedBooks initiated
+2022-10-10 16:01:01.4782 INFO Create Book initiated
+2022-10-10 16:01:04.3524 INFO GeOwnedBooks initiated
+2022-10-10 16:01:32.9753 INFO GeOwnedBooks initiated
+2022-10-10 16:01:35.9488 INFO GeOwnedBooks initiated
+2022-10-10 16:01:38.4624 INFO GeOwnedBooks initiated
+2022-10-10 16:01:44.6151 INFO GeOwnedBooks initiated
+2022-10-10 16:01:45.8980 INFO GeOwnedBooks initiated
+2022-10-10 16:01:55.5212 INFO GeOwnedBooks initiated
+2022-10-10 16:03:38.7095 INFO GeOwnedBooks initiated
+2022-10-10 16:03:40.6627 INFO GeOwnedBooks initiated
+2022-10-10 16:03:51.0378 INFO Delete book initiated
+2022-10-10 16:03:51.5997 INFO GeOwnedBooks initiated
+2022-10-10 16:04:01.2418 INFO Create Book initiated
+2022-10-10 16:04:03.9618 INFO GeOwnedBooks initiated
+2022-10-10 16:04:27.8496 INFO GeOwnedBooks initiated
+2022-10-10 16:04:52.7596 INFO GeOwnedBooks initiated
+2022-10-10 16:04:53.2562 INFO GeOwnedBooks initiated

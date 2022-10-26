@@ -1,0 +1,40 @@
+
+  <div class="container">
+    <div class="modal-header">
+   
+      
+    </div>
+    <div class="card">
+      <div class="card-header card-header-danger">
+        <h4 class="card-title">Dodaj autora</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <form
+            [formGroup]="authorForm"
+            novalidate
+            autocomplete="off"
+            #form="ngForm"
+          >
+            <app-text-input
+              [formControl]="authorForm.controls['authorName']"
+              [label]="'Ime autora'"
+            ></app-text-input>
+            <div class="form-group text-center">
+              <button
+                class="btn btn-dark btn-lg btn-block"
+                type="submit"
+                [disabled]="authorForm.invalid"
+                (click)="authorForm.valid && postBookAuthor()">
+                DODAJ
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" (click)="bsModalRef.hide()">Zatvori</button>
+    </div>
+  </div>
+

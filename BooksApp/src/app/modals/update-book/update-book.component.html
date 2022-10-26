@@ -1,0 +1,32 @@
+ <div class="container"  >
+        <div class="modal-header">      
+        </div>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Uredi knjigu</h4>
+                        <p class="card-category">Popuni sve podatke</p>
+                    </div>
+                    <div class="card-body">
+                      <form [formGroup]="uploadForm" class="container" novalidate autocomplete="off" #form="ngForm">
+                              
+                        <app-text-input [formControl]="uploadForm.controls['bookTitle']" 
+                              [label]='"Naziv knjige"'></app-text-input>
+  
+                        <app-text-input (keypress)="numberOnly($event)" [formControl]="uploadForm.controls['bookYear']" 
+                              [label]='"Godina knjige"'></app-text-input>
+  
+                        <br>
+                        <div class="form-group text-center">
+                            <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid" (click)="updateBook()">Uredi knjigu</button>
+                        </div> 
+                    </form> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="bsModalRef.hide()">Zatvori</button>
+                  </div>
+            </div>
+           
+   
+   
+  
